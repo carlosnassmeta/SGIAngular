@@ -1,27 +1,46 @@
-# SGI
+Este MOC usa as seguintes tecnologias e precisam estar instaladas no PC que rodará a aplicação
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
+.NET Core 3.1 https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.10-windows-x64-installer
 
-## Development server
+Node JS https://nodejs.org/dist/v14.15.3/node-v14.15.3-x64.msi
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+SQL Server Express https://go.microsoft.com/fwlink/?linkid=866658
 
-## Code scaffolding
+Visual Studio 2019 (rodar testes unitários) https://visualstudio.microsoft.com/pt-br/thank-you-downloading-visual-studio/?sku=Community&rel=16
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Download os fontes em duas pastas
 
-## Running unit tests
+SGIAPI - API com os enspoints para conexão ao banco de dados
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+SGIAngular - front end para cadastro de caminhões
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+Executar os comandos no prompt do comando DOS (elevado)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+cd SGI\SGIAPI\IMS.Api.Information
+
+dotnet run --force
+
+(Rodará um webserver com um endpoint)
+
+
+
+Executar os comandos em outro prompt do comando DOS (elevado)
+
+cd SGI\SGIAngular
+
+ng serve
+
+(Rodará um webserver com um frontend Angular)
+
+
+
+Rodar a aplicação em https://localhost:4200/
+
+Testar o endpoint em https://localhost:44308/swagger/index.html
+
+
+
